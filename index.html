@@ -513,7 +513,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="container">
+        <div class="footer-social-container">
           <p class="footer-soc-text">Social media</p>
           <ul class="footer-soc">
             <li class="footer-soc-item">
@@ -566,6 +566,32 @@
             </li>
           </ul>
         </div>
+        <!-- SUBSCRIBE start -->
+        <div class="subscribe-container">
+          <p class="footer-soc-text">Subscribe</p>
+          <form class="footer-form">
+            <label for="footer-email" aria-label="footer email"></label>
+            <input
+              type="email"
+              name="footer-email"
+              id="footer-email"
+              class="subscribe-input"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="subscribe-btn">
+              Subscribe
+              <svg class="newsletter-icon">
+                <use
+                  href="./images/icons.svg#icon-subscribe"
+                  width="24"
+                  height="20"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <!-- SUBSCRIBE end -->
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -616,13 +642,40 @@
                 class="modal-input"
                 required
               />
-              <svg class="input-icon email-icon" width="18" height="24">
+              <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
+          <div class="modal-field">
+            <label class="modal-label" for="">Comment</label>
+            <textarea
+              name="modal-text"
+              placeholder="Text input"
+              class="modal-textarea"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              class="input-check visually-hidden"
+              value="true"
+            />
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the &nbsp;
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="modal-send-btn">Send</button>
         </form>
-        <button type="submit">Send</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
