@@ -789,7 +789,6 @@ project-title and team-title have similar css ----------*/
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--subtle-text-color);
-    display: flex;
     align-items: center;
 }
 .check-text a {
