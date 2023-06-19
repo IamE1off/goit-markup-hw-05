@@ -459,7 +459,7 @@ project-title and team-title have similar css ----------*/
 .footer-subscribe {
     display: flex;
     gap: 24px;
-    max-width: 453px;
+    
 }
 
 .subscribe-input {
