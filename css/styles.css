@@ -456,6 +456,11 @@ project-title and team-title have similar css ----------*/
     justify-content: space-between;
     align-items: center;
 }
+.footer-subscribe {
+    display: flex;
+    gap: 24px;
+    max-width: 453px;
+}
 
 .subscribe-input {
     border: 1px solid var(--background-color);
@@ -467,7 +472,7 @@ project-title and team-title have similar css ----------*/
     padding-left: 16px;
     outline: transparent;
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     display: flex;
     align-items: center;
@@ -477,7 +482,7 @@ project-title and team-title have similar css ----------*/
 
 .subscribe-input::placeholder {
     font-size: 12px;
-    line-height: 24px;
+    line-height: 1.5; 
     letter-spacing: 0.04em;
     color: #FFFFFF;
 }
@@ -493,18 +498,16 @@ project-title and team-title have similar css ----------*/
     cursor: pointer;
     padding: 8px 24px;
     margin: 0 auto;
-    display: inline-flex;
     gap: 16px;
     border: none;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     border-radius: 4px;
-    display: flex;
+    display: inline-flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     transition: background-color var(--transition);
-   
-
 }
 
 .subscribe-btn:is(:hover, :focus) {
@@ -516,7 +519,7 @@ project-title and team-title have similar css ----------*/
     align-items: center;
     position: relative;
     fill: var(--background-color);
-    transform: translateY(45%);
+    transform: translateY(40%);
 }
 
 
@@ -716,6 +719,12 @@ project-title and team-title have similar css ----------*/
 .modal-field {
     margin-bottom: 8px;
 }
+.modal-field-comment {
+    margin-bottom: 16px;
+}
+.modal-field-policy {
+    margin-bottom: 24px;
+}
 .modal-input {
     width: 100%;
     height: 40px;
@@ -731,9 +740,7 @@ project-title and team-title have similar css ----------*/
 .modal-input:focus {
     border-color: var(--primary-brand-color);
 }
-.modal-input:focus + .input-icon {
-    fill: var(--primary-brand-color);
-}
+
 .modal-label {
     font-family: 'Roboto';
     font-style: normal;
@@ -741,7 +748,8 @@ project-title and team-title have similar css ----------*/
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--subtle-text-color);
-    display: inline-block; 
+    display: block; 
+    margin-bottom: 4px;
 }
 .input-wrap {
     position: relative;
@@ -754,7 +762,14 @@ project-title and team-title have similar css ----------*/
     fill: #2E2F42; 
     transition: fill (--transition)
 }
+.modal-input:focus+.input-icon {
+    fill: var(--primary-brand-color);
+}
 .modal-textarea {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
     width: 100%;
     height: 120px;
     padding: 8px 16px;
@@ -764,6 +779,7 @@ project-title and team-title have similar css ----------*/
     outline: transparent;
     transition: border-color var(--transition);
     resize: none;   
+    
 }
 .modal-textarea:focus {
     border-color: var(--primary-brand-color);
@@ -783,16 +799,20 @@ project-title and team-title have similar css ----------*/
     color: var(--primary-brand-color);
     align-items: center;
 }
-.check-text span {
+.check-user-privacy {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     margin-right: 8px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.check-user-privacy:focus {
+
 }
 .check-icon {
     
