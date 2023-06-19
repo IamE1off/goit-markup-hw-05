@@ -518,7 +518,6 @@ project-title and team-title have similar css ----------*/
     align-items: center;
     position: relative;
     fill: var(--background-color);
-    transform: translateY(40%);
     margin-left: 16px;
 }
 
