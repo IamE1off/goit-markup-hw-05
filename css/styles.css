@@ -455,10 +455,11 @@ project-title and team-title have similar css ----------*/
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 24px;
 }
 .footer-subscribe {
     display: flex;
-    gap: 24px;
+    
     
 }
 
@@ -477,7 +478,6 @@ project-title and team-title have similar css ----------*/
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    margin-right: 24px;
 }
 
 .subscribe-input::placeholder {
@@ -498,7 +498,6 @@ project-title and team-title have similar css ----------*/
     cursor: pointer;
     padding: 8px 24px;
     margin: 0 auto;
-    gap: 16px;
     border: none;
     min-width: 165px;
     height: 40px;
@@ -520,6 +519,7 @@ project-title and team-title have similar css ----------*/
     position: relative;
     fill: var(--background-color);
     transform: translateY(40%);
+    margin-left: 16px;
 }
 
 
