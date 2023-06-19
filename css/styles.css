@@ -325,9 +325,6 @@ project-title and team-title have similar css ----------*/
     width: 40px;
     height: 40px;
 }
-/* .team-icon-color {
-    fill: #f4f4fd;
-} */
 .team-text {
     margin-bottom: 8px;
 }
@@ -758,10 +755,10 @@ project-title and team-title have similar css ----------*/
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    fill: #2E2F42; 
-    transition: fill (--transition);
+    fill: var(--dark-color); 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus+.input-icon {
+.modal-input:focus + .input-icon {
     fill: var(--primary-brand-color);
 }
 .modal-textarea {
