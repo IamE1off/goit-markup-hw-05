@@ -798,7 +798,7 @@ project-title and team-title have similar css ----------*/
     color: var(--primary-brand-color);
     align-items: center;
 }
-.check-user-privacy {
+.check-text span {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -810,14 +810,16 @@ project-title and team-title have similar css ----------*/
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-check:checked + .check-user-privacy {
+.input-check:checked + .check-text span {
     border: none;
     background-color: var(--pressed-state-color);
     fill: var(--light-color);
 }
-.input-check:focus + .check-user-privacy {
+.input-check:focus + .check-text span {
     border-color: var(--pressed-state-color);
+
 }
+
 
 .send-wrap {
     display: flex;
